@@ -1,0 +1,248 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+:root {
+    --primary-color : #9381FF ;
+    --second-color : #B8B8FF;
+    --third-color : #f7a0f534;
+}
+
+/* 
+color: var(--third-color);
+*/
+
+.indexNavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.indexNavBar ion-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.faq-section {
+    background: #fdfdfd;
+    min-height: 100vh;
+    padding: 10vh 0 0;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+}
+
+.faq-title h2 {
+    position: relative;
+    margin-bottom: 45px;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1;
+    
+}
+
+.faq-title h2::before {
+    content: "";
+    
+    position: absolute;
+    left: 50%;
+    width: 60px;
+    height: 2px;
+    background: var(--second-color);
+    bottom: -25px;
+    margin-left: -30px;
+}
+
+.faq-title p {
+    padding: 0 190px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.faq {
+    background: #FFFFFF;
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+}
+
+.faq .card {
+    border: none;
+    background: none;
+    border-bottom: 1px dashed #F8F7FF;
+}
+
+.faq .card .card-header {
+    padding: 0px;
+    border: none;
+    background: none;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.faq .card .card-header:hover {
+    background: var(--third-color);
+    padding-left: 10px;
+}
+
+.faq .card .card-header .faq-title {
+    width: 100%;
+    text-align: left;
+    padding: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: black;
+    text-decoration: none !important;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.faq .card .card-header .faq-title .badge {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 14px;
+    float: left;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    text-align: center;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+.faq .card .card-body {
+    padding: 30px;
+    padding-left: 35px;
+    padding-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #6F8BA4;
+    line-height: 28px;
+    letter-spacing: 1px;
+    border-top: 1px solid var(--third-color);
+}
+
+.faq .card .card-body p {
+    margin-bottom: 14px;
+}
+
+@media (max-width: 991px) {
+    .faq {
+        margin-bottom: 30px;
+    }
+
+    .faq .card .card-header .faq-title {
+        line-height: 26px;
+        margin-top: 10px;
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.pomme{
+    background-color: var(--third-color);
+}
+
+.banane{
+    text-align: center;
+}
+
+.info-box {
+    border: 3px solid #ccc; /* Bordure de 1 pixel avec une couleur grise (vous pouvez personnaliser la couleur) */
+    padding: 5px; /* Espace intérieur autour du contenu de la boîte */
+    margin-bottom: 10px; /* Marge en bas de chaque boîte pour séparer visuellement les sections */
+}
+
+.user-login {
+    width: 100%;
+    height: 100vh;
+    background: var(--third-color);
+    position: relative;
+    top: -11px;
+    padding-top: 75px;
+
+}
+
+.user-login-container {
+    margin: 10px auto auto auto;
+    width: 300px;
+    height: 330px;
+    border-radius: 20px;
+    background: var(--second-color);
+    display: flex;
+    padding: 20px;
+}
+
+.user-login-container form {
+    display: block;
+}
+
+.user-login-container form input {
+    border-radius: 10px;
+    padding: 10px;
+    width: 90%;
+    border: 2px solid var(--primary-color);
+}
+
+.user-login-container form label {
+    font-size: 1em;
+    font-weight: 600;   
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #201E45;
+}
+
+.user-login-container form p {
+    font-size: 1em;
+    font-weight: 600;   
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #201E45;
+}
+
+.user-login-container form button {
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    background: var(--primary-color);
+    color: 6F8BA4;
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: auto;
+}
+
+.user-login-conatiner-form-title {
+    text-align: center;
+}
+
+.user-login-conatiner-form-title h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #201E45;
+}
+
+.user-login-conatiner-form-button {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
